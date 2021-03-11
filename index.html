@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Home </title>
+      <link rel="stylesheet" href="style.css">
+	  <link rel="stylesheet" href="search.css">
+   </head>
+   <body>
+      <!--Nav Bar Start -->
+      <div id="NavBarWrapper">
+         <div id="LogoWrapper">
+            <!-- a tag wraps the LOGO div to link back to home-->
+            <a href="index.html">
+               <div class="Logo">
+                  <!-- Image for logo goes here-->
+                  <img class="LogoImg" src="images/BeerPic.png">
+               </div>
+            </a>
+            <!-- a tag wrapper END-->
+         </div>
+         <div class="NavBar">
+            <div id="ButtonWrapper">
+               <div id="HomeButton" onclick="location.href='index.html'">
+                  <h1 class="HomeButtonText">Home</h1>
+               </div>
+               <div id="PubsButton" onclick="location.href='pubs.php'">
+                  <h1 class="PubsButtonText">Pubs</h1>
+               </div>
+               <div id="AboutButton" onclick="location.href='aboutUs.html'">
+                  <h1 class="AboutButtonText">About Us</h1>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--Nav Bar END-->
+      <!-- Body Wrapper Default  !INCLUDE IN ALL PAGES!-->
+      <div id="BodyWrapper">
+      <div class="DocBody">
+         <div class="HomeHeading">
+            <h1>Wheelchair Accessible Pub Finder</h1>
+        </div>
+        <div class="HomeImg"><img class="LogoImg" src="images/slide.jpg"></div> 
+        <div class="HomeImg" id="HomeImg"></div>
+		<p id="searchHeader">Enter a County/Town or Pub Name to Search accessible wheel chair toilets</p>
+		<!-- Search bar start -->
+		<div id="SearchBarWrapper">
+			<div class="searchClass">
+				<button id="searchBtn" onclick="LoadJSON()" type="button">Search</button>
+				<input type="text" id="SearchBar" value="Type to Search" name="searchBar" onclick="remove()" required size="1"/>
+			 </div>
+		</div>
+		<div id="SearchResultWrapper">
+		<p id="sResults"></p>
+		</div>
+		<!-- Search bar END -->
+       
+         <div class="HomeText">
+            <h3></h3>
+         </div>
+      </div>
+      <!--BODY WRAPPER END-->
+      <div class=backgroundboxes>
+         <div class="box1">
+            <div class="Logos1">
+               <img src="images/map.png" width="100" height="100"> 
+               <h4>Find the easiest way to get to your desired pub by using the application built in the pub location, It shows where the nearest pub is depending on the town you are currently in.</h4>
+            </div>
+         </div>
+         <div class="box2">
+            <div class="Logos2">
+               <img src="images/chair.png" width="100"  height="100">
+               <h4>You will be able to tell if the pub you are checking for if it is not wheel chair accessible</h4>
+            </div>
+         </div>
+         <div class="box3">
+            <div class="Logos3"> <img src="images/money.png" width="100" height="100"></div>
+            <h4>Save money by being able to check the prices of each drink in the pub by using the app. Save your time and Save money at the same time.</h4>
+         </div>
+      </div>
+      <!--
+            <div class="cheersWrapper">
+         <div class="cheers">  <img src="cheers.jpg" width="400" height="500">
+         </div>
+
+             <p class="text2"> <h3>Drinking is an emotional thing. It joggles you out of the standardism of everyday life, out of everything being the same. It yanks you out of your body and your mind and throws you against the wall. I have the feeling that drinking is a form of suicide where you're allowed to return to life and begin all over the next day. It's like killing yourself, and then you're reborn. I guess I've lived about ten or fifteen thousand lives now.</h3></p>
+         </div>
+!-->
+      <div class="contact">
+         <h3>
+            If you ever need assistance navigating through the page do not hesistate to conatact us using our social media below. 
+            <h2>"Always buy a bigger bottle than you think you'll need ,Better to be safe than sober" </h2>
+         </h3>
+         
+         <div class="text">
+            <p> 1218 Pear St,</p>
+            <p>  Apple Square HQ 523</p>
+            <p>  356-747-7386</p>
+            <p> info@PubFinder.com</p>
+         </div>
+      </div>
+      
+      <div class="box1">
+         <div class="Logos4"> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO"><img src="images/face.png" width="100" height="100"></div>
+      </div>
+      <div class="box2">
+         <div class="Logos5"> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO"><img src="images/link.png" width="100"  height="100"></div>
+      </div>
+      <div class="box3">
+         <div class="Logos6"> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO"> <img src="images/insta.png" width="100" height="100"></div>
+      </div>
+   </body>
+   
+<!--Script import -->   
+<script type="text/javascript" src="pubs.json"></script>
+<script type="text/javascript" src="search.js"></script>
+</html>

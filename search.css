@@ -1,0 +1,40 @@
+
+#SearchBarWrapper {
+    position:absolute;
+    width:50%;
+    height:10%;
+    color:red;
+	top:50%;
+}
+
+p {
+    font-family: verdana;
+    color:#445626
+}
+
+#SearchBar {
+    position:absolute;
+    width:50%;
+    height:40%;
+    left:15.1%;
+	z-index:1;
+}
+
+#SearchResultWrapper{
+    position: absolute;
+    top:20%;
+    width: 50%;
+    height:50%;
+}
+
+#sResults {
+    position: relative;
+	top:75%;
+}
+
+#searchBtn {
+    position:absolute;
+    height:50%;
+    width:15%;
+	z-index:1;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--Nav Bar Start -->
+        <div id="NavBarWrapper">
+            <div id="LogoWrapper">
+                <!-- a tag wraps the LOGO div to link back to home-->
+                <a href="index.html">
+                    <div class="Logo">
+                        <!-- Image for logo goes here-->
+                        <img class="LogoImg" src="images/BeerPic.png">
+                    </div>
+                </a>
+             <!-- a tag wrapper END-->
+            </div>
+            <div class="NavBar">
+                <div id="ButtonWrapper">
+                     <div id="HomeButton" onclick="location.href='index.html'">
+                        <h1 class="HomeButtonText">Home</h1>
+                    </div>
+                    <div id="PubsButton" onclick="location.href='pubs.php'">
+                        <h1 class="PubsButtonText">Pubs</h1>
+                    </div>
+                    <div id="AboutButton" onclick="location.href='aboutUs.html'">
+                        <h1 class="AboutButtonText">About Us</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Nav Bar END-->
+        
+        <!-- Body Wrapper Default  !INCLUDE IN ALL PAGES!-->
+        <div id="BodyWrapper">
+            <div class="DocBody">
+               
+                <!-- INSERT NEW CODE HERE ! TREAT THIS AS THE NEW BODY !-->
+                <div class="container-fluid">
+                    <h2>About us!</h2>
+                    <div class="accordion">
+                        <div class="icon"></div>
+                            <h5>What is this Website for?</h5>
+                    </div>
+                        <div class="panel">
+                            <p>This website shows you what pubs around Ireland are disabled accessible!</p>
+                    </div>
+                    
+                    <div class="accordion">
+                        <div class="icon"></div>
+                    
+                            <h5>Why make it?</h5>
+                            
+                    </div>
+                        <div class="panel">
+                            <p>We wanted people to be able to look up pubs in a certain area and be able to tell if the pub you want to visit is wheelchair accessible!</p>
+                        </div>
+                        
+                        <div class="accordion">
+                        <div class="icon"></div>
+                            <h5>Who are you guys?</h5>
+                        </div>
+                        <div class="panel">
+                            <p>We are students from NCI who want to make it easier for people that use wheelchair to find pubs that has wheelchair accessibility</p>
+                        </div>
+                        <div class="accordion">
+                        <div class="icon"></div>
+                            <h5>Our Contacts are Below!</h5>
+                        </div>
+                        <div class="panel">
+                            <p>Our Email is go@gmail.com</p>
+                        </div>
+                </div>
+                <img class="groupPhoto" src="images/drunkguys.jpg" alt="Drunk guys">
+
+                <h5 class="copyright">The people in the picture are not the actual students of NCI and is just a random photo. This work has copyright<span>&#169;</span>
+                    Any copy infringment can be courted to a minimum of <span>&#8364;</span>5000.</h5>
+            </div>
+            
+        </div>
+        <!--BODY WRAPPER END--> 
+        
+        <script src="app.js"></script>
+    </body>
+</html>
